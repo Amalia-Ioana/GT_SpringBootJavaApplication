@@ -12,5 +12,6 @@ Asa arata site-ul cu biblioteca mea virtuala:
 ![image](https://github.com/Amalia-Ioana/GT_SpringBootJavaApplication/assets/130684249/a064745a-350b-4c29-99ee-dd0ab59c9964)
 
 ---------------
+Legatura cu baza de date s-a efectuat cu MySQL Workbench, in urmatorul fel:
 ![image](https://github.com/Amalia-Ioana/GT_SpringBootJavaApplication/assets/130684249/3f3fcc32-118d-4751-be57-3010bf807aa7)
 
