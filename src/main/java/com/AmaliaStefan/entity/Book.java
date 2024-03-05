@@ -4,6 +4,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 
 @Entity
 public class Book {
@@ -14,6 +16,7 @@ public class Book {
 	private String name;
 	private String author;
 	private String price;
+	
 	public Book(int id, String name, String author, String price) {
 		super();
 		this.id = id;
@@ -21,10 +24,12 @@ public class Book {
 		this.author = author;
 		this.price = price;
 	}
+	
 	public Book() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+	
 	public int getId() {
 		return id;
 	}
