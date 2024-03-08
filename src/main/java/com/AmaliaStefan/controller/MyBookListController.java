@@ -5,6 +5,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.AmaliaStefan.entity.Book;
+import com.AmaliaStefan.entity.MyBookList;
 import com.AmaliaStefan.service.MyBookListService;
 
 @Controller

@@ -48,9 +48,11 @@ public class BookController {
 	
 	@PostMapping("/save")
 	public String addBook(@ModelAttribute Book b) {
-		service.save(b);
-		return "redirect:/available_books";
+	    System.out.println("Attempting to save book: " + b.getName() + ", " + b.getAuthor() + ", " + b.getPrice()); // Log pentru a verifica datele
+	    service.save(b);
+	    return "redirect:/available_books";
 	}
+
 	@GetMapping("/my_books")
 	public String getMyBooks(Model model)
 	{
