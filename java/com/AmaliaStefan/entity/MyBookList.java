@@ -1,35 +1,38 @@
 package com.AmaliaStefan.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.AmaliaStefan.service.MyBookListService;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 @Entity
-public class Book {
+@Table(name="MyBooks")
+public class MyBookList {
 	
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
 	private String name;
 	private String author;
 	private String price;
+	private String image;
 	
-	public Book(int id, String name, String author, String price) {
+	public MyBookList() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public MyBookList(int id, String name, String author, String price, String image) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.author = author;
 		this.price = price;
+		this.image = image;
 	}
-	
-	public Book() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-	
 	public int getId() {
 		return id;
 	}
@@ -54,5 +57,10 @@ public class Book {
 	public void setPrice(String price) {
 		this.price = price;
 	}
-	
+	public String getImage() {
+		return image;
+	}
+	public void setImage(String image) {
+		this.image = image;
+	}
 }

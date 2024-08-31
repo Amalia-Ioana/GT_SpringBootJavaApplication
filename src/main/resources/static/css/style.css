@@ -1,0 +1,311 @@
+/* backround animat cu gradient  */
+.gradient-background {
+  background: linear-gradient(300deg, #61B15A, #ADCE74, #FFF76A);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+  height: 500px;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* rotunjire imagine  */
+.icon-square {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  height: 375px;
+  width: auto; 
+  border-radius: 50%;
+  margin-bottom: 100px; 
+}
+
+/* css navbar */
+.navbar-brand {
+  font-size: 1.5rem;
+  margin-left: 200px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+}
+
+.navbar {
+  justify-content: center;
+}
+
+.navbar-nav {
+  margin: 0 auto;
+}
+
+.nav-item {
+  padding: 0 10px;
+}
+
+.nav-link-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* carusel functional  */
+.carousel-item img {
+    max-height: 400px; /* înălțimea imaginilor */
+    margin: 0 auto; /* Centrarea imaginilor  */
+  }
+
+ .carousel-control-prev-icon,
+ .carousel-control-next-icon {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(11deg) brightness(105%) contrast(102%);
+  }  /* saturare, contrast, luminozitate, rotatie */
+
+/* afisare carti  */
+.book-card {
+     border: 1px solid #ddd;
+     border-radius: 8px;
+     padding: 20px;
+     margin-bottom: 20px;
+     text-align: center;
+}
+.book-image {
+     width: 200px;
+     height: auto;
+     margin-bottom: 15px;
+}
+.book-details {
+     margin-top: 10px;
+}
+
+/* afisare carti favorite  */
+.favorite-card {
+     border: 1px solid #ddd;
+     border-radius: 5px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     overflow: hidden;
+     margin-bottom: 20px;
+     text-align: center;
+}
+
+.favorite-card img {
+     width: 200px;
+     height: auto;
+     border-bottom: 15px;
+}
+
+.favorite-card-body {
+     padding: 15px;
+}
+
+.favorite-card-body h5 {
+     margin-top: 0;
+     font-size: 1.25rem;
+}
+
+.favorite-card-body p {
+     margin: 5px 0;
+}
+
+.favorite-card-body .price {
+     font-weight: bold;
+     color: #333;
+}
+
+.favorite-card-body .action a {
+     color: red;
+}
+
+/* Stilizare pentru tabel autori */
+.custom-table {
+     width: 100%;
+}
+
+.author-image {
+     max-width: 400px;
+     max-height: 400px;
+}
+
+.author-info {
+     display: flex;
+     align-items: center;
+     text-align: center;
+}
+
+.author-info > div {
+     margin-left: 10px;
+}
+
+.author-details {
+     border: 1px solid #ccc;
+     padding: 10px;
+     margin-bottom: 40px; /* Spatiu mai mare între autori */
+     position: relative; /* Pentru a plasa inimioarele */
+     text-align: center;
+ }
+        
+.author-details img {
+     margin-right: 10px;
+}
+
+.author-bio {
+     border: 1px solid #ccc;
+     padding: 10px;
+     text-align: center;
+}
+        
+/* Stilizare pentru inimioare */
+.heart-line {
+     text-align: center;
+     margin-bottom: 40px; /* Spațiu între inimioare și următorul autor */
+}
+        
+.heart {
+     color: #61B15A;
+     font-size: 24px;
+     margin: 0 5px;
+}
+
+/* formular */
+.form-container {
+     border: 5px solid #61B15A;
+     border-radius: 10px;
+     background-color: #f8f9fa;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-heading {
+     color: #61B15A;
+     margin-bottom: 30px;
+}
+
+.form-label {
+     font-weight: bold;
+}
+
+.submit-btn {
+     background-color: #61B15A;
+     border: none;
+     color: white;
+}
+
+.submit-btn:hover {
+     background-color: #519d4a;
+}
+
+/* căutare - aliniat în partea dreaptă */
+.search-container {
+    display: flex;
+    justify-content: flex-end; 
+    padding: 20px; 
+}
+
+.search {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 28px;
+    background: #f6f6f6;
+    transition: box-shadow 0.25s;
+}
+
+.search:focus-within {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.75);
+}
+
+.search-input {
+    font-size: 16px;
+    font-family: "Lexend", sans-serif;
+    color: #333333;
+    margin-left: 10px;
+    outline: none;
+    background: transparent;
+    flex: 1;
+    border: none;
+}
+
+.search-input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.search-icon {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.btn-search {
+    background-color: #61B15A;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 36px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.btn-search:hover {
+    background-color: #4a9d3b;
+}
+
+/* Stiluri pentru imaginea model */
+.model-image {
+    margin-bottom: 20px;
+}
+
+.model-image img {
+    max-width: 370px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* club de cartea  */
+#book-of-the-month {
+    background: #f9f9f9; /* Fundal ușor gri pentru a evidenția secțiunea */
+}
+
+.book-details {
+    margin-bottom: 20px;
+}
+
+.book-title {
+    font-size: 1.5em;
+    color: #333;
+    font-weight: bold;
+}
+
+.book-author {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.book-of-the-month-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer; /* Arată că imaginea este clicabilă */
+    transition: transform 0.3s ease; /* Adaugă o tranziție pentru zoom */
+}
+
+.book-of-the-month-img:hover {
+    transform: scale(1.05); /* Zoom ușor la hover */
+}
+
+.book-link {
+    text-decoration: none; /* Îndepărtează sublinierea link-ului */
+}
+
+.col-lg-8 {
+    font-size: 1.1em;
+    line-height: 1.6;
+}

@@ -10,7 +10,7 @@ import com.AmaliaStefan.reporitory.AuthorRepository;
 
 @Service
 public class AuthorService {
-    
+
     @Autowired
     private AuthorRepository authorRepository;
 

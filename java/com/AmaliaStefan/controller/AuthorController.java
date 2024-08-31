@@ -11,13 +11,12 @@ import com.AmaliaStefan.entity.Author;
 import com.AmaliaStefan.service.AuthorService;
 
 
-
-
 @Controller
 public class AuthorController {
     
     @Autowired
     private AuthorService authorService;
+    
     
     @GetMapping("/authors")
     public String getAllAuthors(Model model) {
@@ -26,4 +25,6 @@ public class AuthorController {
         return "authors";
 
 }
+
 }
+
